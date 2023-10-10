@@ -3,7 +3,7 @@ import React from 'react'
 import SectionHeading from './SectionHeading'
 import PopularPick from './PopularPick'
 
-const popularPicks = [{}]
+const popularPicks = [{}, {}]
 
 const PopularPicks = () => {
   return (
