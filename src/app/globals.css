@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .iconHeader {
-  @apply ml-4 cursor-pointer text-3xl text-gray-500 hover:text-gray-950;
+  @apply ml-4 cursor-pointer text-2xl text-gray-500 hover:text-gray-950;
 }
