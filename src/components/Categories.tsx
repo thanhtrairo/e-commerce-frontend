@@ -1,4 +1,4 @@
-import React from 'react'
+// 'use client'
 
 import SectionHeading from './SectionHeading'
 import Category from './Category'
@@ -6,7 +6,7 @@ import { categoriesData } from '~/lib/data'
 
 const Categories = () => {
   return (
-    <section>
+    <section className="w-[100%]">
       <SectionHeading>Categories</SectionHeading>
       <div className="flex flex-wrap">
         {categoriesData.map((category, index) => (

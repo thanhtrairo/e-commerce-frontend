@@ -1,19 +1,22 @@
+'use client'
+
 import React from 'react'
 
 import SectionHeading from './SectionHeading'
-import PopularPick from './PopularPick'
+import Product from './Product'
+import Slider from './Slider'
 
-const popularPicks = [{}, {}]
+const popularPicks = [{}, {}, {}, {}, {}, {}]
 
 const PopularPicks = () => {
   return (
-    <section className="mt-12">
+    <section className="mt-12 w-[100%]">
       <SectionHeading>Popular picks</SectionHeading>
-      <div className="flex flex-wrap">
+      <Slider>
         {popularPicks.map((popularPick, index) => (
-          <PopularPick key={index} {...popularPick} />
+          <Product key={index} {...popularPick} />
         ))}
-      </div>
+      </Slider>
     </section>
   )
 }

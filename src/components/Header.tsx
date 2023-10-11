@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <header className="fixed left-0 top-0 z-[999] flex w-[100%] items-center bg-white px-4 py-4 shadow-md sm:px-12 lg:px-20">
       <div className="basis-1/6">
-        <h1 className="text-xl font-extrabold">My.Shop</h1>
+        <Link href="/" className="text-xl font-extrabold">
+          My.Shop
+        </Link>
       </div>
       <div className="basis-3/6">
         <SearchBar />
