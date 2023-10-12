@@ -15,7 +15,7 @@ const SampleNextArrow = (props: SampleArrow) => {
   const { className, style, onClick } = props
   return (
     <div
-      className={`${className} !-right-3 z-[2] before:!text-2xl before:!text-gray-950`}
+      className={`${className} !-right-3 z-[2] !hidden before:!text-2xl before:!text-gray-950 sm:!block`}
       style={style}
       onClick={onClick}
     />
@@ -26,7 +26,7 @@ const SamplePrevArrow = (props: SampleArrow) => {
   const { className, style, onClick } = props
   return (
     <div
-      className={`${className} !-left-3 z-[2] before:!text-2xl before:!text-gray-950`}
+      className={`${className} !-left-3 z-[2] !hidden before:!text-2xl before:!text-gray-950 sm:!block`}
       style={style}
       onClick={onClick}
     />

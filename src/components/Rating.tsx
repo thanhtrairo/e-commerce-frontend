@@ -12,7 +12,7 @@ const Rating = (props: RatingProps) => {
   const { star, starFill, starHalf } = getRating(value)
 
   return (
-    <div className="flex">
+    <div className="flex items-center">
       {starFill.length > 0
         ? starFill.map((_starFil, index) => <BsStarFill key={index} className="text-xs text-yellow-400" />)
         : null}
@@ -20,6 +20,7 @@ const Rating = (props: RatingProps) => {
         ? starHalf.map((_starHalf, index) => <BsStarHalf key={index} className="text-xs text-yellow-400" />)
         : null}
       {star.length > 0 ? star.map((_star, index) => <BsStar key={index} className="text-xs text-yellow-400" />) : null}
+      <span className="ml-1 text-xs">{`(${value})`}</span>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import SectionHeading from './SectionHeading'
 import Category from './Category'

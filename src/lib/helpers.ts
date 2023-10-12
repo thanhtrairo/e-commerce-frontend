@@ -17,4 +17,10 @@ const getRating = (value: number) => {
   }
 }
 
-export { getRating }
+const numberWithCommas = (value: number, separators = 3) => {
+  const pattern = new RegExp(`\\B(?=(\\d{${separators}})+(?!\\d))`, 'g')
+
+  return value.toString().replace(pattern, '.')
+}
+
+export { getRating, numberWithCommas }

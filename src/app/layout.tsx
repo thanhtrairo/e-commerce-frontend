@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Jost } from 'next/font/google'
 
 import Header from '~/components/Header'
 import './globals.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const jost = Jost({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'My e-commerce',
@@ -16,9 +16,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={jost.className}>
         <Header />
-        {children}
+        <main className="mt-20 flex min-h-screen flex-col items-center overflow-hidden bg-white px-1 py-4 sm:px-4 md:px-16 lg:px-28">
+          {children}
+        </main>
       </body>
     </html>
   )
